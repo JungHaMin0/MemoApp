@@ -1,0 +1,137 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+table { 
+  border-collapse: collapse; border-spacing: 0; 
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none
+}
+
+a:hover, a:active {
+  text-decoration: none; 
+  color:#fff; 
+}
+
+
+ol, ul{
+  list-style: none;
+}
+
+/* Main CSS */
+
+section {
+  width: 500px;
+  height: 600px;
+  background-color: rgba(245, 240, 240, 0.896);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:  translate(-50%, -50%);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 2px 2px 2px 2px rgba(58, 58, 58, 0.3);
+  display: flex; 
+  flex-direction: column;
+}
+
+main {
+  background-color: bisque;
+}
+
+h3 {
+  /* position: relative;
+  top: 50px;
+  left: 30px; */
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-family: Georgia, serif;
+}
+
+.top-menu {
+  width: 100%;
+  height: 30px;
+}
+
+input[type=text] {
+  outline: none;
+  border: 0;
+  background-color: rgba(225, 224, 224, 0.918);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.search {
+  /* position: relative;
+  top: 70px;
+  left: 25px; */
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 90%;
+  height: 30px;
+}
+
+.note-item {
+  background-color: #fff;
+  width: 90%;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.btn-create {
+  position: relative;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  background: rgba(173, 167, 167, 0.749);
+  width: 100px;
+  height: 30px;
+  left: 370px;
+  top: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-create::after {
+  content: '';
+  display: block;
+  border-radius: 10px 10px 10px 10px;
+  width: 0;
+  height: 30px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(53, 52, 52, 0.236);
+}
+
+.btn-create:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+h3 {
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+h3::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(200, 125, 220, .6);
+}
+
+h3:hover::after {
+  width: 135px;
+  transition: width .3s;
+}
+
