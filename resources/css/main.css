@@ -135,3 +135,6 @@ h3:hover::after {
   transition: width .3s;
 }
 
+.btn-cancle {
+  display: none;
+}
